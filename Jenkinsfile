@@ -16,10 +16,10 @@ pipeline{
                     ansiColor('xterm') {
                     withCredentials([azureServicePrincipal(
                     credentialsId: 'Jenkins',
-                    subscriptionIdVariable: '0444f5bd-f158-45de-9a56-190ccc7ee8c3',
-                    clientIdVariable: 'edef04e2-c2cb-4db9-b50c-245c86f851fb',
-                    clientSecretVariable: 'GJp8Q~4ufHwvmKSNjyTi.wC4XUy7njnsbEZAbang',
-                    tenantIdVariable: '069ca8c2-34f8-4786-940a-96d33e8cf1f3'
+                    subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
+                    clientIdVariable: 'ARM_CLIENT_ID',
+                    clientSecretVariable: 'ARM_CLIENT_SECRET',
+                    tenantIdVariable: 'ARM_TENANT_ID'
                 ), string(credentialsId: 'access_key', variable: 'ARM_ACCESS_KEY')]) {
                         
                         sh """
@@ -38,10 +38,10 @@ pipeline{
                     ansiColor('xterm') {
                     withCredentials([azureServicePrincipal(
                     credentialsId: 'Jenkins',
-                    subscriptionIdVariable: '0444f5bd-f158-45de-9a56-190ccc7ee8c3',
-                    clientIdVariable: 'edef04e2-c2cb-4db9-b50c-245c86f851fb',
-                    clientSecretVariable: 'GJp8Q~4ufHwvmKSNjyTi.wC4XUy7njnsbEZAbang',
-                    tenantIdVariable: '069ca8c2-34f8-4786-940a-96d33e8cf1f3'
+                    subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
+                    clientIdVariable: 'ARM_CLIENT_ID',
+                    clientSecretVariable: 'ARM_CLIENT_SECRET',
+                    tenantIdVariable: 'ARM_TENANT_ID'
                 ), string(credentialsId: 'access_key', variable: 'ARM_ACCESS_KEY')]) {
                         
                         sh """
@@ -59,10 +59,10 @@ pipeline{
                     ansiColor('xterm') {
                     withCredentials([azureServicePrincipal(
                     credentialsId: 'Jenkins',
-                    subscriptionIdVariable: '0444f5bd-f158-45de-9a56-190ccc7ee8c3',
-                    clientIdVariable: 'edef04e2-c2cb-4db9-b50c-245c86f851fb',
-                    clientSecretVariable: 'GJp8Q~4ufHwvmKSNjyTi.wC4XUy7njnsbEZAbang',
-                    tenantIdVariable: '069ca8c2-34f8-4786-940a-96d33e8cf1f3'
+                    subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
+                    clientIdVariable: 'ARM_CLIENT_ID',
+                    clientSecretVariable: 'ARM_CLIENT_SECRET',
+                    tenantIdVariable: 'ARM_TENANT_ID'
                 ), string(credentialsId: 'access_key', variable: 'ARM_ACCESS_KEY')]) {
                         
                         sh """
@@ -90,10 +90,10 @@ pipeline{
                     ansiColor('xterm') {
                     withCredentials([azureServicePrincipal(
                     credentialsId: 'Jenkins',
-                    subscriptionIdVariable: '0444f5bd-f158-45de-9a56-190ccc7ee8c3',
-                    clientIdVariable: 'edef04e2-c2cb-4db9-b50c-245c86f851fb',
-                    clientSecretVariable: 'GJp8Q~4ufHwvmKSNjyTi.wC4XUy7njnsbEZAbang',
-                    tenantIdVariable: '069ca8c2-34f8-4786-940a-96d33e8cf1f3'
+                    subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
+                    clientIdVariable: 'ARM_CLIENT_ID',
+                    clientSecretVariable: 'ARM_CLIENT_SECRET',
+                    tenantIdVariable: 'ARM_TENANT_ID'
                 ), string(credentialsId: 'access_key', variable: 'ARM_ACCESS_KEY')]) {
 
                         sh """

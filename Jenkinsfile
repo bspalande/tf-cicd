@@ -16,7 +16,7 @@ pipeline {
         }
 		stage('checkout') {
 		 steps {
-			checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'githubid', url: 'https://github.com/bspalande/tf-cicd']]])
+			checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'githubid', url: 'https://github.com/bspalande/tf-cicd']]])
 			}
 		}
 		stage('Terraform Init') {

@@ -88,14 +88,12 @@ pipeline {
                             tenantIdVariable: 'ARM_TENANT_ID'
                         ), string(credentialsId: 'access_key', variable: 'ARM_ACCESS_KEY')]) {
 
-                                sh """
-                                echo "Applying the plan"
 
-                                terraform plan -out ./linuxVM/linuxVM.tfplan
-                                terraform apply ./linuxVM/linuxVM.tfplan -auto-approve -no-color -var "client_id=$ARM_CLIENT_ID" -var "client_secret=$ARM_CLIENT_SECRET" -var "subscription_id=$ARM_SUBSCRIPTION_ID" -var "tenant_id=$ARM_TENANT_ID"
-
-                                """
-                                        }
+                        sh """
+                        echo "Applying the plan"
+                        terraform apply -auto-approve -var "client_id=$ARM_CLIENT_ID" -var "client_secret=$ARM_CLIENT_SECRET" -var "subscription_id=$ARM_SUBSCRIPTION_ID" -var "tenant_id=$ARM_TENANT_ID"
+                        """
+                                }
 
                     }
                 }
